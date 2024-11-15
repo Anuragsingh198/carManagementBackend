@@ -1,10 +1,23 @@
 {
-    "version": 2,
-    "name": "music-album",
-    "builds": [
-       { "src": "index.js", "use": "@vercel/node" }
-    ],
-    "routes": [
-       { "src": "/(.*)", "dest": "/index.js" }
-    ]
+   "version": 2,
+   "name": "car-listing-backend",
+   "builds": [
+     {
+       "src": "index.js",
+       "use": "@vercel/node"
+     }
+   ],
+   "routes": [
+     {
+       "src": "/(.*)",
+       "dest": "/index.js"
+     }
+   ],
+   "env": {
+     "MONGO_URL": "mongodb+srv://travel:travel12345@ecommercewebsite.2k28whz.mongodb.net/?retryWrites=true&w=majority&appName=EcommerceWebsite",
+     "C_NAME": "dm2wf8agu",
+     "C_KEY": "439352667356535",
+     "C_SECRETKEY": "RljaAUT_CIWxcTV7m52PE4kk5O8"
+   }
  }
+ 
